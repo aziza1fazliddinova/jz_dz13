@@ -115,9 +115,9 @@ let categories = [
 
 for (let i = 0; i < arr.length;
     i++) {
-    const student = arr[i];
-    const faculty = student.info.faculity.trim().toUpperCase();
-    const category = categories.find(categ => categ.course.trim() === faculty);
+    let student = arr[i];
+    let faculty = student.info.faculity.trim().toUpperCase();
+    let category = categories.find(categ => categ.course.trim() === faculty);
     if (category) {
         category.count++;
     }
